@@ -36,12 +36,5 @@ for(i=0;i<m;i++)
     }
     printf("\n");
     }
-    if(a[i][j]==a[j][i])
-    {
-      printf("This is symmetric\n");
-    }
-    else{
-      printf("This is not symmetric\n");
-    }
 
 }

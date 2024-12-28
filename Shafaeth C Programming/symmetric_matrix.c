@@ -2,7 +2,7 @@
 int main()
 {
 
-int i,j,n,m,a[100][100],b[100][100],c[100][100];
+int i,j,n,m,a[100][100],b[100][100],c[100][100],isSymmetric;
 printf("Enter row:");
 scanf("%d",&m);
 printf("Enter col:");
@@ -26,17 +26,37 @@ for(i=0;i<m;i++)
     }
     printf("\n");
     }
+    for(i=0;i<m;i++)
+{
+    for(j=0;j<n;j++)
+    {
+b[j][i]=a[i][j];
+    }
+
+    }
 
     printf("after transpose\n");
 for(i=0;i<m;i++)
 {
     for(j=0;j<n;j++)
     {
-      printf("%d ", a[j][i]);
+      printf("%d ", b[i][j]);
     }
     printf("\n");
     }
-    if(a[i][j]==a[j][i])
+    isSymmetric=0;
+    for(i=0;i<m;i++)
+{
+    for(j=0;j<n;j++)
+    {
+      if(a[i][j]!=b[i][j])
+      {
+        isSymmetric=1;
+        break;
+      }
+    }
+    }
+    if(isSymmetric==0)
     {
       printf("This is symmetric\n");
     }
