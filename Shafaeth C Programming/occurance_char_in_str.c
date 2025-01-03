@@ -2,7 +2,7 @@
 int main()
 {
     char a[100],b[100];
-    int i,count=-1;
+    int i,count=0;
     char ch;
     printf("Enter first string:");
     gets(a);
@@ -13,20 +13,11 @@ int main()
 {
   if(ch==a[i])
   {
-   count=i;
+   count++;
   }
 }
-if(count!=-1)
-{
-  printf("%c character occurance at %d",ch,count);
 
-
-}
-else{
-  printf("the character is not available");
-}
-
-
+  printf("occurence of the character:%d",count);
 
 
 }
