@@ -1,1 +1,1 @@
-#include<stdio.h>
+if (board[i][j] == EMPTY)
