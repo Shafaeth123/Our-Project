@@ -66,7 +66,7 @@ void initialize() {
   
                 board[i][j] = FOOD; 
                 food++; 
-            } 
+            }   
         } 
      }
     // Place Pac-Man

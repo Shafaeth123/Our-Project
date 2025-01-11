@@ -1,4 +1,4 @@
-num1=10
-num2=10
-sum =num1 + num2
-print = sum
+c=5
+y="five is greater than two"
+print(c)
+print(y)
